@@ -5,9 +5,9 @@ import libui.*
 
 class Button(
   var title: String? = null,
-  var uiButton: CPointer<uiControl>? = null
+  var uiButton: CPointer<uiButton>? = null
 )
 
-//fun button(init: Button.() -> Unit): Button = Button().apply(init).apply {
-//  uiButton = uiNewButton("libui говорит: click me!")
-//}
+fun button(init: Button.() -> Unit): Button = Button().apply(init).apply {
+  uiButton = uiNewButton("libui говорит: click me!")
+}
