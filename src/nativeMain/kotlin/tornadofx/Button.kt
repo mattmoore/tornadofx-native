@@ -8,6 +8,6 @@ class Button(
   var uiButton: CPointer<uiControl>? = null
 )
 
-fun button(init: Button.() -> Unit): Button = Button().apply(init).apply {
-  uiButton = uiNewButton("libui говорит: click me!")
-}
+//fun button(init: Button.() -> Unit): Button = Button().apply(init).apply {
+//  uiButton = uiNewButton("libui говорит: click me!")
+//}
