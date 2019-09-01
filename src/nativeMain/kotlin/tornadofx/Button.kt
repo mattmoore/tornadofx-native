@@ -7,7 +7,7 @@ class Button(
         var title: String? = null,
         private var uiButton: CPointer<uiButton>? = null,
         private var clicked: () -> Unit = {}
-) {
+): Control() {
     init {
         uiButton = uiNewButton("libui говорит: click me!")
     }
